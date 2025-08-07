@@ -11,27 +11,27 @@ const Categories = [
     {
         id: 1,
         name: "All",
-        icon: <TiThSmall className="w-[60px] h-[60px] text-green-600" />,
+        icon: <TiThSmall className="w-[40px] md:w-[60px] h-[60px] md:h-[40px] text-green-600" />,
     },
     {
         id: "2",
         name: "breakfast",
-        icon: <GiCoffeeCup className="w-[60px] h-[60px] text-green-600" />,
+        icon: <GiCoffeeCup className="w-[40px] md:w-[60px] h-[60px] md:h-[40px] text-green-600" />,
     },
     {
         id: "3",
         name: "soups",
-        icon: <MdSoupKitchen className="w-[60px] h-[60px] text-green-600" />,
+        icon: <MdSoupKitchen className="w-[40px] md:w-[60px] h-[60px] md:h-[40px] text-green-600" />,
     },
     {
         id: "4",
         name: "pasta",
-        icon: <CiBowlNoodles className="w-[60px] h-[60px] text-green-600" />,
+        icon: <CiBowlNoodles className="w-[40px] md:w-[60px] h-[60px] md:h-[40px] text-green-600" />,
     },
     {
         id: "5",
         name: "main course",
-        icon: <MdFoodBank className="w-[60px] h-[60px] text-green-600" />,
+        icon: <MdFoodBank className="w-[40px] md:w-[60px] h-[60px] md:h-[40px] text-green-600" />,
     },
     {
         id: "6",

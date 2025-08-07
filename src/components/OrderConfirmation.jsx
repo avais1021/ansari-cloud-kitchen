@@ -20,7 +20,7 @@ const OrderConfirmation = ({setPopupVal}) => {
         // const userOrder = 
 
     return (
-        <div className='w-[100%] h-[100%] bg-[#000000a8] fixed top-0 left-0 z-[99]'>
+        <div className='w-[100%] h-[100%] bg-[#000000a8] fixed top-0 left-0 z-[99] px-5'>
             <section className=' max-w-[500px] w-[100%] h-[380px] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded shadow-lg z-50 flex items-center justify-center relative'>
                     <form action="https://formspree.io/f/xjkoadpj" method="POST" className='flex flex-col items-center justify-center w-[100%]'>
                         <input className='max-w-[360px] w-[100%] rounded-md p-2 border mb-3 ' type="text" name='name' placeholder='Enter your name' />

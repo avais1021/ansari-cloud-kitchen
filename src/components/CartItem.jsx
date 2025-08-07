@@ -29,18 +29,20 @@ const CartItem = () => {
         return (
           <div key={item.id} className='mb-5 flex justify-between items-center p-2 gap-3.5 shadow-xl'>
             <div className='flex gap-5'>
-              <img src={food_image} alt={food_name} className='w-[150px] h-[100px] rounded-md' />
+            <div className='w-[150px] h-[100px]'>
+              <img src={food_image} alt={food_name} className='w-[100%] h-[100%] rounded-md' />
+            </div>
               <div className='flex justify-center flex-col gap-2'>
-                <p className='font-semibold text-[15px] max-w-[130px] w-[100%] '>{food_name}</p>
+                <p className='font-semibold text-[15px] max-w-[78px] md:max-w[130px] w-[100%] '>{food_name}</p>
                 <div className='border-green-500 border-2 w-fit flex justify-center items-center rounded-md text-green-500'><FaMinus onClick={() => (dispatch(AddQty({ id, type: "decrement" })), dispatch(totalPrice()))} className='w-[25px] cursor-pointer' /><span className='bg-gray-200 w-[25px] text-center'>{food_quantity}</span><FaPlus onClick={() => (dispatch(AddQty({ id, type: "increment" })), dispatch(totalPrice()))} className='w-[25px] cursor-pointer' /></div>
               </div>
 
             </div>
-            <div className='flex justify-center flex-col gap-2'><h2 className='text-green-500 font-semibold text-[20px]'>Rs {discountPrice * food_quantity}</h2> <MdDelete onClick={() => {
+            <div className='flex justify-center flex-col gap-2'><h2 className='text-green-500 font-semibold text-[18px] md:text-[20px]'>Rs {discountPrice * food_quantity}</h2> <MdDelete onClick={() => {
               dispatch(RemoveItem(id));
               dispatch(totalPrice());
               notify();
-            }} className='text-red-600 text-[25px] cursor-pointer' /></div>
+            }} className='text-red-600 text-[20px] md:text-[25px] cursor-pointer' /></div>
           </div>
         )
       })}

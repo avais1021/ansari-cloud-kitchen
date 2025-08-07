@@ -27,7 +27,7 @@ const Nav = () => {
             </div>
             <div className='w-[60%] bg-white rounded-md flex items-center gap-3 p-2 shadow-xl'>
                 <BsSearch className='text-green-500 w-[20px] h-[20px] ' />
-                <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Search your dishes' className='outline-0 w-[100%] text-2xl' />
+                <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Search your dishes' className='outline-0 w-[100%] text-[15px] md:text-2xl' />
             </div>
             <div onClick={() =>  {setShowCart(true) , totalPrice() } } className='bg-white flex items-center justify-center w-[50px] h-[40px] rounded-md shadow-xl cursor-pointer relative'>
                 <BiSolidShoppingBags className='text-green-500 w-[30px] h-[30px] p-1' />
